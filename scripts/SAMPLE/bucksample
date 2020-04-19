@@ -1,0 +1,13 @@
+load("//Config:buck_rule_macros.bzl", "first_party_library")
+
+first_party_library(
+    name = "__MODULE_NAME__",
+    deps = [
+        # "//Pods:RxSwift"
+        # "//Pods:ReSwift"
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/Foundation.framework",
+        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    ],
+)

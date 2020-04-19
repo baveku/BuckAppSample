@@ -1,0 +1,8 @@
+{
+    "buck.projectConfig": {
+        "projectPath": "/Users/admin/Workspace/Mobile/iOS/BuckSample",
+        "flavor": [],
+        "target": "//App/Resources:ExampleAppStringResources",
+        "platform": "linux-x86_64"
+    }
+}

@@ -1,35 +1,66 @@
 PODS:
+  - Alamofire (5.1.0)
   - Bugsnag (5.17.3)
   - CryptoSwift (0.13.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - Nimble (8.0.2)
-  - PromiseKit/CoreLocation (6.1.1):
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
     - PromiseKit/CorePromise
-  - PromiseKit/CorePromise (6.1.1)
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
   - Quick (2.1.0)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - ReSwift (5.0.0)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
   - Bugsnag
   - CryptoSwift
-  - Nimble (= 8.0.2)
-  - PromiseKit/CoreLocation (= 6.1.1)
-  - PromiseKit/CorePromise (= 6.1.1)
-  - Quick (= 2.1.0)
+  - Moya
+  - Nimble
+  - PromiseKit
+  - Quick
+  - R.swift
+  - ReSwift
+  - RxSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - Alamofire
     - Bugsnag
     - CryptoSwift
+    - Moya
     - Nimble
     - PromiseKit
     - Quick
+    - R.swift
+    - R.swift.Library
+    - ReSwift
+    - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Bugsnag: a56a5204ebd35e44e56c1f703824705b1d4b5b97
   CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
-  PromiseKit: 876f433b87c970f020e04e35dbe68ab21d240498
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 55b76b3ee1e461323f281ef4448793b0e32202ee
+PODFILE CHECKSUM: 074c62f28cc92fe50902f8172ae8b526d570c838
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1

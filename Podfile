@@ -5,10 +5,14 @@ platform :ios, '10.0'
 install! 'cocoapods', integrate_targets: false
 
 target 'BuckSample' do
+  pod 'RxSwift'
+  pod 'ReSwift'
+  pod 'R.swift'
+  pod 'Moya'
+
   pod 'CryptoSwift'
   pod 'Bugsnag'
-  pod 'PromiseKit/CorePromise', '6.1.1'
-  pod 'PromiseKit/CoreLocation', '6.1.1'
-  pod 'Quick', '2.1.0'
-  pod 'Nimble', '8.0.2'
+  pod 'PromiseKit'
+  pod 'Quick'
+  pod 'Nimble'
 end

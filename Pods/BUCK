@@ -87,3 +87,32 @@ apple_third_party_lib(
       '$PLATFORM_DIR/Developer/Library/Frameworks/XCTest.framework'
     ]
 )
+
+apple_third_party_lib(
+    name = "RxSwift",
+    swift_version = "5",
+    visibility = ["PUBLIC"],
+    srcs = glob([
+        "RxSwift/**/*.swift",
+    ]),
+)
+
+apple_third_party_lib(
+    name = "ReSwift",
+    swift_version = "5",
+    visibility = ["PUBLIC"],
+    srcs = glob([
+        "ReSwift/**/*.swift",
+    ]),
+)
+
+apple_third_party_lib(
+    name = "Moya",
+    swift_version = "5",
+    visibility = ["PUBLIC"],
+    srcs = glob([
+        "Moya/**/*.swift",
+        "Alamofire/**/*.swift"
+    ]),
+)
+

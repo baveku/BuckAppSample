@@ -4,5 +4,5 @@
 import Foundation
 
 func localizedString(_ key: String, _ comment: String) -> String {
-  return NSLocalizedString(key, tableName: "ExampleApp", comment: comment)
+  return NSLocalizedString(key, tableName: "KMart", comment: comment)
 }
