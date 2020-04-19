@@ -12,6 +12,12 @@ make install_buck
 
 ### To Change AppName
 Open Makefile and change variable AppName
+```sh
+# Use local version of Buck
+...
+AppName=MyStartApp
+...
+```
 
 
 Note: you may need to [install Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) before `buck` will run for you locally.
