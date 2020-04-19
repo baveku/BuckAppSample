@@ -1,4 +1,4 @@
-DEFAULT_APP_NAME=SampleApp
+DEFAULT_APP_NAME="SampleApp"
 
 def appConfig():
     return {

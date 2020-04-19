@@ -10,19 +10,19 @@ This repo shows how Airbnb builds its iOS applications using Buck. It is where w
 make install_buck
 ```
 
+### To Change AppName
+Open Makefile and change variable AppName
+
+
 Note: you may need to [install Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) before `buck` will run for you locally.
 
-### Running Tests
-Press `Cmd + U` to run the unit tests for the `ExampleApp` target inside Xcode.
 
-Or, from the terminal you can run `make test`.
-
-<img src="https://github.com/airbnb/BuckSample/raw/master/Docs/CommandLineTests.png" width=500 />
-
-### Viewing Targets
-You may run `make targets` to see a list of Buck targets available to build/test/etc.
-
-<img src="https://github.com/airbnb/BuckSample/raw/master/Docs/BuckTargets.png" width=450 />
+### To Make SubModule
+```bash
+# Make Module
+make module MODULE_NAME=STARTER
+```
+Change STARTER to your App Name
 
 ### Viewing Dependencies
 You may run `buck query "deps(//App:ExampleAppBinary)" --dot > result.dot` to save Graphviz output of the dependency tree starting at the rule `//App:ExampleAppBinary`. You may then run `dot -Tpng result.dot -o result.png` to create a PNG image showing this dependency structure.
